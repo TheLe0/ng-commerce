@@ -1,27 +1,43 @@
 # NgCommerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+This is a free template for an E-Commerce website using Angular 12+.
 
-## Development server
+To run locally on your machine you need to have installed:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* [Node 16+](https://nodejs.org/en/);
+* [Json Server](https://www.npmjs.com/package/json-server);
+* [Angular CLI](https://www.npmjs.com/package/@angular/cli).
 
-## Code scaffolding
+>Note: To run the application you only need Node installed. You only need Json Server instlled
+> if you want to run the application with the fake backend. And Angular CLI if you want to improve
+> with new Angular functionalities.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup the enviroment
 
-## Build
+To install and run the application you only need these commands:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+npm i
+json-server --watch ./data/products.json # If you want the fake backend, otherwise you can skip this step
+npm start
+```
 
-## Running unit tests
+You are ready to go!
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Website Overview
 
-## Running end-to-end tests
+<b>Home Page</b>:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<img src="./images/home.png" />
 
-## Further help
+<b>Products Page</b>:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img src="./images/products.png" />
+
+<b>About Page</b>:
+
+<img src="./images/about.png" />
+
+<b>Contact Page</b>:
+
+<img src="./images/contact.png" />
