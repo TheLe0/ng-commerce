@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { Menu } from '../../models/menu';
 
 @Component({
   selector: 'app-menu',
@@ -6,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  mainMenu: Menu = new Menu("Ng Commerce", "home");
+  menus: Menu[] = [
+    new Menu("Produtos", "#"),
+    new Menu("Sobre", "about"),
+    new Menu("Contato", "contact"),
+    new Menu("Features", "#")
+  ];
 
 }
