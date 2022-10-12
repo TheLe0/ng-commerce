@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "start:server": "json-server --watch ./data/products.json",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,

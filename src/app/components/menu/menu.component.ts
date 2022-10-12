@@ -12,7 +12,7 @@ export class MenuComponent {
 
   mainMenu: Menu = new Menu("Ng Commerce", "home");
   menus: Menu[] = [
-    new Menu("Produtos", "#"),
+    new Menu("Produtos", "products"),
     new Menu("Sobre", "about"),
     new Menu("Contato", "contact"),
     new Menu("Features", "#")
