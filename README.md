@@ -1,5 +1,7 @@
 # NgCommerce
 
+[![Build & Test](https://github.com/TheLe0/ng-commerce/actions/workflows/build_and_test.yml/badge.svg)](https://github.com/TheLe0/ng-commerce/actions/workflows/build_and_test.yml)
+
 This is a free template for an E-Commerce website using Angular 12+.
 
 To run locally on your machine you need to have installed:
