@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  info: string;
+
+  constructor() {
+    this.info = "Ng Commerce - TheLe0";
+  }
 
   ngOnInit(): void {
   }

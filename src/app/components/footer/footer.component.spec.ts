@@ -24,4 +24,11 @@ describe('HeroesComponent', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
+
+    it('should match footer info', () => {
+        const fixture = TestBed.createComponent(FooterComponent);
+        fixture.detectChanges();
+        const compiled = fixture.nativeElement as HTMLElement;
+        expect(compiled.querySelector('.text-white')?.textContent).toContain('Ng Commerce - TheLe0');
+    });
 });
