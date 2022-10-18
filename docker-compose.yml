@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  ng-commerce-client:
+    container_name: ng-commerce-client
+    build:
+      context: ./
+      dockerfile: Client.Dockerfile
+    depends_on:
+      - ng-commerce-api
+    ports:
+      - 4200:80
+    networks:
+      - ng-commerce
+  ng-commerce-api:
+    container_name: ng-commerce-api
+    build:
+      context: ./
+      dockerfile: Server.Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - ng-commerce
+
+networks:
+  ng-commerce:
+    name: nc_network

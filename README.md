@@ -21,6 +21,12 @@ npm i
 json-server --watch ./data/products.json # If you want the fake backend, otherwise you can skip this step
 npm start
 ```
+Or you can run this on Docker, you only need to have installed on your machine Docker, don't need Node or Angular CLI. 
+You can run on docker with this command:
+
+```sh
+docker-compose up -d
+```
 
 You are ready to go!
 
