@@ -49,6 +49,7 @@
             "outputPath": "dist/ng-commerce",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "aot": true,
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
